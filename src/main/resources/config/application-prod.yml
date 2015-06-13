@@ -1,0 +1,40 @@
+server:
+    port: 8090
+
+liquibase:
+    context: prod
+
+spring:
+    profiles:
+        active: prod
+    data:
+        mongodb:
+            host: localhost
+            port: 27090
+            database: mihealth
+    thymeleaf:
+        mode: XHTML
+        cache: true
+
+metrics:
+    jmx.enabled: true
+    spark:
+        enabled: false
+        host: localhost
+        port: 9999
+    graphite:
+        enabled: false
+        host: localhost
+        port: 2003
+        prefix: mihealth
+
+http:
+    cache:
+        timeToLiveInDays: 31
+
+cache:
+    timeToLiveSeconds: 3600
+    hazelcast:
+        debug: false
+        stickySession: false
+        backupCount: 1

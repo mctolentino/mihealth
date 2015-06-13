@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "baseName": "mihealth",
+    "packageName": "com.mihealth",
+    "packageFolder": "com/mihealth",
+    "authenticationType": "oauth2",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "hazelcast",
+    "websocket": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "no",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "0ba45b1596f3e7fb41c86a2abbb1e82bcad3e695"
+  }
+}
